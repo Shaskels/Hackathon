@@ -1,5 +1,13 @@
 name: myprog
 services:
+  postgres:
+    image: postgres:13.3
+    environment:
+      POSTGRES_DB: "db"
+      POSTGRES_USER: "user"
+      POSTGRES_PASSWORD: "pgpwd4habr"
+    ports:
+      - "5432:5432"
   teamlead-1:
     image: developer1
     environment:
