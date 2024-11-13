@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\Juniors\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\juniors\\juniors\\isenderapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|solutionrelative:juniors\\isenderapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\juniors\\juniors\\appstarter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|solutionrelative:juniors\\appstarter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\juniors\\juniors\\juniors.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|solutionrelative:juniors\\juniors.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\juniors\\juniors\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|solutionrelative:juniors\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\juniors\\juniors\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|solutionrelative:juniors\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\juniors\\juniors\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|solutionrelative:juniors\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\juniors\\juniors\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|solutionrelative:juniors\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\juniors\\juniors\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|solutionrelative:juniors\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\juniors\\juniors\\juniors.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|solutionrelative:juniors\\juniors.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\juniors\\juniors\\resources\\juniors5.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -29,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\juniors\\juniors\\resources\\teamleads5.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|solutionrelative:juniors\\resources\\teamleads5.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\juniors\\juniors\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|solutionrelative:juniors\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97633263-79F3-42DC-B07B-5183563ABE49}|Juniors\\Juniors.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\juniors\\juniors\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -63,19 +67,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ISenderApi.cs",
+              "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\Juniors\\Juniors\\ISenderApi.cs",
+              "RelativeDocumentMoniker": "Juniors\\ISenderApi.cs",
+              "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\Juniors\\Juniors\\ISenderApi.cs",
+              "RelativeToolTip": "Juniors\\ISenderApi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T06:18:35.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AppStarter.cs",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\Juniors\\Juniors\\AppStarter.cs",
               "RelativeDocumentMoniker": "Juniors\\AppStarter.cs",
               "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\Juniors\\Juniors\\AppStarter.cs",
               "RelativeToolTip": "Juniors\\AppStarter.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwC4AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T08:18:54.169Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\Juniors\\Juniors\\Dockerfile",
               "RelativeDocumentMoniker": "Juniors\\Dockerfile",
@@ -87,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Juniors5.csv",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\Juniors\\Juniors\\Resources\\Juniors5.csv",
               "RelativeDocumentMoniker": "Juniors\\Resources\\Juniors5.csv",
@@ -99,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "config.json",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\Juniors\\Juniors\\config.json",
               "RelativeDocumentMoniker": "Juniors\\config.json",
@@ -107,24 +124,24 @@
               "RelativeToolTip": "Juniors\\config.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-09T07:56:21.705Z"
+              "WhenOpened": "2024-10-09T07:56:21.705Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\Juniors\\Juniors\\Program.cs",
               "RelativeDocumentMoniker": "Juniors\\Program.cs",
               "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\Juniors\\Juniors\\Program.cs",
               "RelativeToolTip": "Juniors\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T07:36:49.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T07:36:49.967Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\Juniors\\Juniors\\appsettings.json",
               "RelativeDocumentMoniker": "Juniors\\appsettings.json",
@@ -132,11 +149,12 @@
               "RelativeToolTip": "Juniors\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-09T07:36:40.421Z"
+              "WhenOpened": "2024-10-09T07:36:40.421Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Teamleads5.csv",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\Juniors\\Juniors\\Resources\\Teamleads5.csv",
               "RelativeDocumentMoniker": "Juniors\\Resources\\Teamleads5.csv",
@@ -148,32 +166,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Juniors.csproj",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\Juniors\\Juniors\\Juniors.csproj",
               "RelativeDocumentMoniker": "Juniors\\Juniors.csproj",
               "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\Juniors\\Juniors\\Juniors.csproj",
               "RelativeToolTip": "Juniors\\Juniors.csproj",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-09T07:51:07.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T07:51:07.426Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\Juniors\\Juniors\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Juniors\\Properties\\launchSettings.json",
               "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\Juniors\\Juniors\\Properties\\launchSettings.json",
               "RelativeToolTip": "Juniors\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAA4AAAAAAAAAAABRwB0AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAABhwB0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-09T07:37:19.195Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             }
           ]
         }

@@ -2,14 +2,11 @@
 using AllForTheHackathon.Domain;
 using AllForTheHackathon.Infrastructure;
 using Microsoft.Extensions.Options;
-using Newtonsoft.Json;
-
 
 namespace TeamLeads
 {
-    public class AppStarter(IOptions<Settings> options, IRegistrar registrar, IWishlistsGenerator wishlistsGenerator) : IHostedService
+    public class AppStarter(IOptions<Settings> options, IRegistrar registrar, IWishlistsGenerator wishlistsGenerator, ISenderApi api) : IHostedService
     {
-        static HttpClient httpClient = new HttpClient();
         private bool _running = true;
         public Task StartAsync(CancellationToken cancellationToken)
         {
@@ -29,13 +26,11 @@ namespace TeamLeads
                 List<Junior> juniors = registrar.RegisterParticipants<Junior>(settings.FileWithJuniors);
                 List<TeamLead> teamLeads = new List<TeamLead> { new TeamLead(int.Parse(teamLeadId), teamLeadName) };
                 List<Wishlist> teamLeadsWishlist = wishlistsGenerator.MakeWishlistsForTeamLeads(juniors, teamLeads);
-                var json = JsonConvert.SerializeObject(teamLeadsWishlist[0]);
-                StringContent stringContent = new StringContent(json);
                 bool sended = false;
                 while (sended == false){
                     try
                     {
-                        using var response = await httpClient.PostAsync($"http://hrmanager:8080/wishlistTeamLead/{teamLeadId}/{teamLeadName}", stringContent);
+                        using var response = await api.CreatePostAsync(teamLeadId, teamLeadName, teamLeadsWishlist[0]);
                         sended = true;
                         Console.WriteLine(response.StatusCode);
                     }
