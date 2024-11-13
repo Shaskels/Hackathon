@@ -9,6 +9,7 @@ namespace HRDirector
     public class HackathonController(ISaver dbSaver, AllForTheHackathon.Domain.HRDirector hrDirector) : Controller
     {
         [HttpPost]
+        [Route("Hackathon/Save")]
         public async Task<IActionResult> Save()
         {
             using StreamReader reader = new StreamReader(Request.Body);

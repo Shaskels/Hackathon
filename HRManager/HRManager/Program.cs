@@ -20,14 +20,10 @@ builder.Services.AddRefitClient<ISenderApi>(new RefitSettings
 }).ConfigureHttpClient(c => c.BaseAddress = new Uri("http://hrdirector:8080"));
 builder.Services.AddDbContext<HRManager.ApplicationContext>(s => s.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")), ServiceLifetime.Transient);
 builder.Services.AddSingleton<DBOperators>();
-builder.Services.AddSingleton<ITeamBuildingStrategy, GaleShapleyStrategy>();
 builder.Services.AddControllers();
+builder.Services.AddSingleton<ITeamBuildingStrategy, GaleShapleyStrategy>();
 builder.Services.AddSingleton<ToHRDirectorDataSender>();
 var app = builder.Build();
-app.MapControllerRoute(
-    name: "juniors",
-    pattern: "{controller=Wishlist}/{action=Junior}");
-app.MapControllerRoute(
-    name: "teamleads",
-    pattern: "{controller=Wishlist}/{action=TeamLead}");
+app.UseRouting();
+app.MapControllers();
 app.Run();

@@ -8,7 +8,6 @@ builder.Services.AddSingleton<AllForTheHackathon.Domain.HRDirector>();
 builder.Services.AddControllers();
 builder.Services.AddSingleton<ISaver, DBSaver>();
 var app = builder.Build();
-app.MapControllerRoute(
-    name: "hackathon",
-    pattern: "{controller=Hackathon}/{action=Save}");
+app.UseRouting();
+app.MapControllers();
 app.Run();

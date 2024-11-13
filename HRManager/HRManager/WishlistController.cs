@@ -8,6 +8,7 @@ namespace HRManager
     public class WishlistController(DBOperators operators) : Controller
     {
         [HttpPost]
+        [Route("Wishlist/Junior")]
         public async Task<IActionResult> Junior(int id, string name)
         {
             var junior = new Junior(id, name);
@@ -24,6 +25,7 @@ namespace HRManager
         }
 
         [HttpPost]
+        [Route("Wishlist/TeamLead")]
         public async Task<IActionResult> TeamLead(int id, string name)
         {
             var teamLead = new TeamLead(id, name);
