@@ -2,11 +2,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using AllForTheHackathon.Infrastructure;
-using AllForTheHackathon.Domain.Employees;
+using Microsoft.Extensions.Options;
 
 namespace HRDirector
 {
-    public class HackathonController(ISaver dbSaver, AllForTheHackathon.Domain.HRDirector hrDirector) : Controller
+    public class HackathonController(ISaver dbSaver, AllForTheHackathon.Domain.HRDirector hrDirector, 
+        HackathonData recievedData, IOptions<Settings> options) : Controller
     {
         [HttpPost]
         [Route("Hackathon/Save")]
@@ -18,17 +19,27 @@ namespace HRDirector
             data = JsonConvert.DeserializeObject<DataTransferObject>(dataString);
             if (data != null)
             {
-                SetEmployeeToWishlists(data.Juniors, data.TeamLeads, data.JuniorsWishlists, data.TeamLeadsWishlists);
-                dbSaver.SaveEmployees(data.Juniors, data.TeamLeads);
-                dbSaver.SaveWishlists(data.JuniorsWishlists, data.TeamLeadsWishlists);
                 double harmonicMean = hrDirector.CalculateTheHarmonicMean(data.Teams);
                 Console.WriteLine(harmonicMean.ToString());
-                Hackathon hackathon = new Hackathon();
-                hackathon.TeamLeads = data.TeamLeads;
-                hackathon.Juniors = data.Juniors;
-                hackathon.Result = harmonicMean;
-                hackathon.Teams = data.Teams;
-                dbSaver.SaveHackathon(hackathon);
+                recievedData.harmonicMean = harmonicMean;
+                Settings settings = options.Value;
+                if (recievedData.teamLeadsWishlists.Count == settings.NumberOfTeams && recievedData.juniorsWishlists.Count == settings.NumberOfTeams
+                    && recievedData.juniors.Count == settings.NumberOfTeams && recievedData.teamLeads.Count == settings.NumberOfTeams)
+                {
+                    dbSaver.SaveEmployees(recievedData.juniors, recievedData.teamLeads);
+                    dbSaver.SaveWishlists(recievedData.juniorsWishlists, recievedData.teamLeadsWishlists);
+                    Hackathon hackathon = new Hackathon();
+                    hackathon.TeamLeads = recievedData.teamLeads;
+                    hackathon.Juniors = recievedData.juniors;
+                    hackathon.Result = harmonicMean;
+                    hackathon.Teams = data.Teams;
+                    dbSaver.SaveHackathon(hackathon);
+                    recievedData.saved = true;
+                }
+                else
+                {
+                    recievedData.teams = data.Teams;
+                }
             }
             else
             {
@@ -36,16 +47,6 @@ namespace HRDirector
             }
 
             return Ok();
-        }
-
-        private void SetEmployeeToWishlists(List<Junior> juniors, List<TeamLead> teamLeads,
-            List<Wishlist> juniorsWishlist, List<Wishlist> teamLeadsWishlist)
-        {
-            for (int i = 0; i < juniors.Count; i++)
-            {
-                juniorsWishlist[i].Employee = juniors[i];
-                teamLeadsWishlist[i].Employee = teamLeads[i];
-            }
         }
     }
 }

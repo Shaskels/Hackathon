@@ -3,40 +3,44 @@
   "WorkspaceRootPath": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\hrmanager\\hrmanager\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|solutionrelative:hrmanager\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\hrmanager\\hrmanager\\tohrdirectordatasender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|solutionrelative:hrmanager\\tohrdirectordatasender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\hrmanager\\hrmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|solutionrelative:hrmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\hrmanager\\hrmanager\\appstarter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|solutionrelative:hrmanager\\appstarter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\hrmanager\\hrmanager\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|solutionrelative:hrmanager\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\hrmanager\\hrmanager\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|solutionrelative:hrmanager\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\hrmanager\\hrmanager\\dboperators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|solutionrelative:hrmanager\\dboperators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\hrmanager\\hrmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|solutionrelative:hrmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\hrmanager\\hrmanager\\tohrdirectordatasender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|solutionrelative:hrmanager\\tohrdirectordatasender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\hrmanager\\hrmanager\\wishlistgetterconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|solutionrelative:hrmanager\\wishlistgetterconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\hrmanager\\hrmanager\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|solutionrelative:hrmanager\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\hrmanager\\hrmanager\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|solutionrelative:hrmanager\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\hrmanager\\hrmanager\\isenderapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|solutionrelative:hrmanager\\isenderapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\hrmanager\\hrmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|solutionrelative:hrmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\hrmanager\\hrmanager\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|solutionrelative:hrmanager\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\hrmanager\\hrmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|solutionrelative:hrmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9B180099-6B56-4AE3-9DAD-613E5606DAC7}|HRManager\\HRManager.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\hrmanager\\hrmanager\\hrmanager.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -54,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,13 +74,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "ToHRDirectorDataSender.cs",
+              "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\ToHRDirectorDataSender.cs",
+              "RelativeDocumentMoniker": "HRManager\\ToHRDirectorDataSender.cs",
+              "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\ToHRDirectorDataSender.cs",
+              "RelativeToolTip": "HRManager\\ToHRDirectorDataSender.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T13:01:39.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ApplicationContext.cs",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\ApplicationContext.cs",
               "RelativeDocumentMoniker": "HRManager\\ApplicationContext.cs",
               "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\ApplicationContext.cs",
               "RelativeToolTip": "HRManager\\ApplicationContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T03:24:59.825Z",
               "EditorCaption": ""
@@ -84,32 +101,84 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "WishlistGetterConsumer.cs",
+              "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\WishlistGetterConsumer.cs",
+              "RelativeDocumentMoniker": "HRManager\\WishlistGetterConsumer.cs",
+              "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\WishlistGetterConsumer.cs",
+              "RelativeToolTip": "HRManager\\WishlistGetterConsumer.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T09:40:02.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AppStarter.cs",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\AppStarter.cs",
               "RelativeDocumentMoniker": "HRManager\\AppStarter.cs",
               "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\AppStarter.cs",
               "RelativeToolTip": "HRManager\\AppStarter.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAABvAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T18:11:29.799Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "DBOperators.cs",
+              "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\DBOperators.cs",
+              "RelativeDocumentMoniker": "HRManager\\DBOperators.cs",
+              "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\DBOperators.cs",
+              "RelativeToolTip": "HRManager\\DBOperators.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T03:45:08.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WishlistController.cs",
+              "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\WishlistController.cs",
+              "RelativeDocumentMoniker": "HRManager\\WishlistController.cs",
+              "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\WishlistController.cs",
+              "RelativeToolTip": "HRManager\\WishlistController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T07:53:31.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ISenderApi.cs",
+              "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\ISenderApi.cs",
+              "RelativeDocumentMoniker": "HRManager\\ISenderApi.cs",
+              "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\ISenderApi.cs",
+              "RelativeToolTip": "HRManager\\ISenderApi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T13:55:12.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\Program.cs",
               "RelativeDocumentMoniker": "HRManager\\Program.cs",
               "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\Program.cs",
               "RelativeToolTip": "HRManager\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T08:28:07.447Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "config.json",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\config.json",
               "RelativeDocumentMoniker": "HRManager\\config.json",
@@ -122,46 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WishlistController.cs",
-              "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\WishlistController.cs",
-              "RelativeDocumentMoniker": "HRManager\\WishlistController.cs",
-              "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\WishlistController.cs",
-              "RelativeToolTip": "HRManager\\WishlistController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T07:53:31.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ToHRDirectorDataSender.cs",
-              "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\ToHRDirectorDataSender.cs",
-              "RelativeDocumentMoniker": "HRManager\\ToHRDirectorDataSender.cs",
-              "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\ToHRDirectorDataSender.cs",
-              "RelativeToolTip": "HRManager\\ToHRDirectorDataSender.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T13:01:39.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DBOperators.cs",
-              "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\DBOperators.cs",
-              "RelativeDocumentMoniker": "HRManager\\DBOperators.cs",
-              "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\DBOperators.cs",
-              "RelativeToolTip": "HRManager\\DBOperators.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T03:45:08.614Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\appsettings.json",
               "RelativeDocumentMoniker": "HRManager\\appsettings.json",
@@ -169,35 +199,25 @@
               "RelativeToolTip": "HRManager\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-09T08:27:59.971Z"
+              "WhenOpened": "2024-10-09T08:27:59.971Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ISenderApi.cs",
-              "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\ISenderApi.cs",
-              "RelativeDocumentMoniker": "HRManager\\ISenderApi.cs",
-              "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\ISenderApi.cs",
-              "RelativeToolTip": "HRManager\\ISenderApi.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T13:55:12.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "HRManager.csproj",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\HRManager.csproj",
               "RelativeDocumentMoniker": "HRManager\\HRManager.csproj",
               "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\HRManager.csproj",
               "RelativeToolTip": "HRManager\\HRManager.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-09T08:31:29.174Z"
+              "WhenOpened": "2024-10-09T08:31:29.174Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\HRManager\\HRManager\\Dockerfile",
               "RelativeDocumentMoniker": "HRManager\\Dockerfile",
@@ -205,7 +225,8 @@
               "RelativeToolTip": "HRManager\\Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-16T07:24:27.776Z"
+              "WhenOpened": "2024-10-16T07:24:27.776Z",
+              "EditorCaption": ""
             }
           ]
         }

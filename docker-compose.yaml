@@ -1,5 +1,15 @@
 name: myprog
 services:
+  rabbitmq:
+    image: rabbitmq:3.10.7-management
+    ports:
+      - 15672:15672
+      - 5672:5672
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 30s
+      timeout: 10s
+      retries: 5
   postgres:
     image: postgres:13.3
     environment:
@@ -10,95 +20,147 @@ services:
       - "5432:5432"
   teamlead-1:
     image: developer1
+    depends_on: 
+      rabbitmq: 
+        condition: service_healthy
     environment:
       name: Филиппова Ульяна
       id: 1
+      queue: hackathon-started-1
     build:
       context: .
       dockerfile: TeamLead/TeamLead/Dockerfile
   teamlead-2:
     image: developer1
+    depends_on: 
+      rabbitmq: 
+        condition: service_healthy
     environment:
       name: Николаев Григорий
       id: 2
+      queue: hackathon-started-2
     build:
       context: .
       dockerfile: TeamLead/TeamLead/Dockerfile
   teamlead-3:
     image: developer1
+    depends_on: 
+      rabbitmq: 
+        condition: service_healthy
     environment:
       name: Андреева Вероника
       id: 3
+      queue: hackathon-started-3
     build:
       context: .
       dockerfile: TeamLead/TeamLead/Dockerfile
   teamlead-4:
     image: developer1
+    depends_on: 
+      rabbitmq: 
+        condition: service_healthy
     environment:
       name: Коротков Михаил
       id: 4
+      queue: hackathon-started-4
     build:
       context: .
       dockerfile: TeamLead/TeamLead/Dockerfile
   teamlead-5:
     image: developer1
+    depends_on: 
+      rabbitmq: 
+        condition: service_healthy
     environment:
       name: Кузнецов Александр
       id: 5
+      queue: hackathon-started-5
     build:
       context: .
       dockerfile: TeamLead/TeamLead/Dockerfile
   junior-1:
     image: developer2
+    depends_on: 
+      rabbitmq: 
+        condition: service_healthy
     environment:
       name: Юдин Адам
       id: 1
+      queue: hackathon-started-6
     build:
       context: .
       dockerfile: Juniors/Juniors/Dockerfile
   junior-2:
     image: developer2
+    depends_on: 
+      rabbitmq: 
+        condition: service_healthy
     environment:
       name: Яшина Яна
       id: 2
+      queue: hackathon-started-7
     build:
       context: .
       dockerfile: Juniors/Juniors/Dockerfile
   junior-3:
     image: developer2
+    depends_on: 
+      rabbitmq: 
+        condition: service_healthy
     environment:
       name: Никитина Вероника
       id: 3
+      queue: hackathon-started-8
     build:
       context: .
       dockerfile: Juniors/Juniors/Dockerfile
   junior-4:
     image: developer2
+    depends_on: 
+      rabbitmq: 
+        condition: service_healthy
     environment:
       name: Рябинин Александр
       id: 4
+      queue: hackathon-started-9
     build:
       context: .
       dockerfile: Juniors/Juniors/Dockerfile
   junior-5:
     image: developer2
+    depends_on: 
+      rabbitmq: 
+        condition: service_healthy
     environment:
       name: Ильин Тимофей
       id: 5
+      queue: hackathon-started-10
     build:
       context: .
       dockerfile: Juniors/Juniors/Dockerfile
   hrmanager:
     image: hrmanager
+    depends_on: 
+      rabbitmq: 
+        condition: service_healthy
+      postgres:
+        condition: service_started
     build:
       context: .
       dockerfile: HRManager/HRManager/Dockerfile
+    environment:
+      queue: wishlist-sended-1
     ports:
       - "7094:8080" 
   hrdirector:
     image: hrdirector
+    depends_on: 
+      rabbitmq: 
+        condition: service_healthy
     build:
       context: .
       dockerfile: HRDirector/HRDirector/Dockerfile
+    environment:
+      queue: wishlist-sended-2
     ports:
       - "7095:8080" 

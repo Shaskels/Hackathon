@@ -14,6 +14,12 @@ namespace HRManager
             _numberOfTeams = options.Value.NumberOfTeams;
             _serviceProvider = serviceProvider;
         }
+
+        public void DeleteDatabase()
+        {
+            ApplicationContext _context = _serviceProvider.GetRequiredService<ApplicationContext>();
+            _context.Database.EnsureDeleted();
+        }
         public async void SaveJunior(Junior junior, Wishlist wishlist)
         {
             ApplicationContext _context = _serviceProvider.GetRequiredService<ApplicationContext>();

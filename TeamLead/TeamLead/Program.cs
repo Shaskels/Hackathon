@@ -4,21 +4,25 @@ using Newtonsoft.Json.Serialization;
 using Newtonsoft.Json;
 using Refit;
 using TeamLeads;
+using MassTransit;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddJsonFile("config.json");
-builder.Services.AddHostedService<AppStarter>();
 builder.Services.Configure<Settings>(builder.Configuration);
-builder.Services.AddRefitClient<ISenderApi>(new RefitSettings
-{
-    ContentSerializer = new NewtonsoftJsonContentSerializer(new JsonSerializerSettings
-    {
-        ContractResolver = new CamelCasePropertyNamesContractResolver(),
-        NullValueHandling = NullValueHandling.Ignore
-    })
-}).ConfigureHttpClient(c => c.BaseAddress = new Uri("http://hrmanager:8080"));
 builder.Services.AddSingleton<IRegistrar, RegistrarFromCSVFiles>();
 builder.Services.AddSingleton<IWishlistsGenerator, RandomWishlistsGenerator>();
+builder.Services.AddSingleton<WishlistSender>();
+builder.Services.AddMassTransit(x =>
+{
+    x.AddConsumer<HackathonStartedConsumer>();
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.ReceiveEndpoint(Environment.GetEnvironmentVariable("queue"), e =>
+        {
+            e.ConfigureConsumer<HackathonStartedConsumer>(context);
+        });
+    });
+});
 var app = builder.Build();
 
 app.Run();
