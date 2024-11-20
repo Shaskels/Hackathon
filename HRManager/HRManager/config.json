@@ -1,0 +1,8 @@
+{
+  "Settings": {
+    "NumberOfTeams": "5"
+  },
+  "ConnectionStrings": {
+    "DefaultConnection": "Host=postgres;Port=5432;Database=db;Username=user;Password=pgpwd4habr"
+  }
+}

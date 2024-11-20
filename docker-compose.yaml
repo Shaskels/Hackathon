@@ -1,0 +1,104 @@
+name: myprog
+services:
+  postgres:
+    image: postgres:13.3
+    environment:
+      POSTGRES_DB: "db"
+      POSTGRES_USER: "user"
+      POSTGRES_PASSWORD: "pgpwd4habr"
+    ports:
+      - "5432:5432"
+  teamlead-1:
+    image: developer1
+    environment:
+      name: Филиппова Ульяна
+      id: 1
+    build:
+      context: .
+      dockerfile: TeamLead/TeamLead/Dockerfile
+  teamlead-2:
+    image: developer1
+    environment:
+      name: Николаев Григорий
+      id: 2
+    build:
+      context: .
+      dockerfile: TeamLead/TeamLead/Dockerfile
+  teamlead-3:
+    image: developer1
+    environment:
+      name: Андреева Вероника
+      id: 3
+    build:
+      context: .
+      dockerfile: TeamLead/TeamLead/Dockerfile
+  teamlead-4:
+    image: developer1
+    environment:
+      name: Коротков Михаил
+      id: 4
+    build:
+      context: .
+      dockerfile: TeamLead/TeamLead/Dockerfile
+  teamlead-5:
+    image: developer1
+    environment:
+      name: Кузнецов Александр
+      id: 5
+    build:
+      context: .
+      dockerfile: TeamLead/TeamLead/Dockerfile
+  junior-1:
+    image: developer2
+    environment:
+      name: Юдин Адам
+      id: 1
+    build:
+      context: .
+      dockerfile: Juniors/Juniors/Dockerfile
+  junior-2:
+    image: developer2
+    environment:
+      name: Яшина Яна
+      id: 2
+    build:
+      context: .
+      dockerfile: Juniors/Juniors/Dockerfile
+  junior-3:
+    image: developer2
+    environment:
+      name: Никитина Вероника
+      id: 3
+    build:
+      context: .
+      dockerfile: Juniors/Juniors/Dockerfile
+  junior-4:
+    image: developer2
+    environment:
+      name: Рябинин Александр
+      id: 4
+    build:
+      context: .
+      dockerfile: Juniors/Juniors/Dockerfile
+  junior-5:
+    image: developer2
+    environment:
+      name: Ильин Тимофей
+      id: 5
+    build:
+      context: .
+      dockerfile: Juniors/Juniors/Dockerfile
+  hrmanager:
+    image: hrmanager
+    build:
+      context: .
+      dockerfile: HRManager/HRManager/Dockerfile
+    ports:
+      - "7094:8080" 
+  hrdirector:
+    image: hrdirector
+    build:
+      context: .
+      dockerfile: HRDirector/HRDirector/Dockerfile
+    ports:
+      - "7095:8080" 
