@@ -2,44 +2,29 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using AllForTheHackathon.Infrastructure;
-using Microsoft.Extensions.Options;
 
 namespace HRDirector
 {
-    public class HackathonController(ISaver dbSaver, AllForTheHackathon.Domain.HRDirector hrDirector, 
-        HackathonData recievedData, IOptions<Settings> options) : Controller
+    public class HackathonController(DBOperators operators, AllForTheHackathon.Domain.HRDirector hrDirector,
+        ILogger<HackathonController> logger) : Controller
     {
         [HttpPost]
         [Route("Hackathon/Save")]
-        public async Task<IActionResult> Save()
+        public async Task<IActionResult> Save([FromBody] DataTransferObject data)
         {
-            using StreamReader reader = new StreamReader(Request.Body);
-            string dataString = await reader.ReadToEndAsync();
-            DataTransferObject? data;
-            data = JsonConvert.DeserializeObject<DataTransferObject>(dataString);
             if (data != null)
             {
                 double harmonicMean = hrDirector.CalculateTheHarmonicMean(data.Teams);
-                Console.WriteLine(harmonicMean.ToString());
-                recievedData.harmonicMean = harmonicMean;
-                Settings settings = options.Value;
-                if (recievedData.teamLeadsWishlists.Count == settings.NumberOfTeams && recievedData.juniorsWishlists.Count == settings.NumberOfTeams
-                    && recievedData.juniors.Count == settings.NumberOfTeams && recievedData.teamLeads.Count == settings.NumberOfTeams)
-                {
-                    dbSaver.SaveEmployees(recievedData.juniors, recievedData.teamLeads);
-                    dbSaver.SaveWishlists(recievedData.juniorsWishlists, recievedData.teamLeadsWishlists);
-                    Hackathon hackathon = new Hackathon();
-                    hackathon.TeamLeads = recievedData.teamLeads;
-                    hackathon.Juniors = recievedData.juniors;
-                    hackathon.Result = harmonicMean;
-                    hackathon.Teams = data.Teams;
-                    dbSaver.SaveHackathon(hackathon);
-                    recievedData.saved = true;
-                }
-                else
-                {
-                    recievedData.teams = data.Teams;
-                }
+                logger.LogInformation(harmonicMean.ToString());
+                operators.SaveEmployees(data.Juniors, data.TeamLeads);
+                Hackathon hackathon = new Hackathon();
+                hackathon.TeamLeads = data.TeamLeads;
+                hackathon.Juniors = data.Juniors;
+                hackathon.Result = harmonicMean;
+                hackathon.Teams = data.Teams;
+                hackathon.Id = data.HackathonId;
+                operators.SaveHackathon(hackathon);
+                logger.LogInformation("Controller saved");
             }
             else
             {

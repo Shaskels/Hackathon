@@ -18,6 +18,14 @@ services:
       POSTGRES_PASSWORD: "pgpwd4habr"
     ports:
       - "5432:5432"
+  postgres_director:
+    image: postgres:13.3
+    environment:
+      POSTGRES_DB: "db_final"
+      POSTGRES_USER: "user"
+      POSTGRES_PASSWORD: "pgpwd4habr"
+    ports:
+      - "5434:5432"
   teamlead-1:
     image: developer1
     depends_on: 
@@ -154,9 +162,11 @@ services:
       - "7094:8080" 
   hrdirector:
     image: hrdirector
-    depends_on: 
+    depends_on:
       rabbitmq: 
         condition: service_healthy
+      postgres_director: 
+        condition: service_started
     build:
       context: .
       dockerfile: HRDirector/HRDirector/Dockerfile

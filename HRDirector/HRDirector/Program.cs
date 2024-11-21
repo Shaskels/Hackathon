@@ -7,19 +7,19 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddJsonFile("config.json");
+builder.Configuration.AddEnvironmentVariables();
 builder.Services.Configure<Settings>(builder.Configuration.GetSection("Settings"));
 builder.Services.AddHostedService<HRDirector.AppStarter>();
-builder.Services.AddDbContext<ApplicationContext>(s => s.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")), ServiceLifetime.Singleton);
+builder.Services.AddDbContext<ApplicationContext>(s => s.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")), ServiceLifetime.Transient);
 builder.Services.AddSingleton<AllForTheHackathon.Domain.HRDirector>();
 builder.Services.AddControllers();
-builder.Services.AddSingleton<ISaver, DBSaver>();
-builder.Services.AddSingleton<HackathonData>();
+builder.Services.AddSingleton<DBOperators>();
 builder.Services.AddMassTransit(x =>
 {
     x.AddConsumer<WishlistGetterConsumer>();
     x.UsingRabbitMq((context, cfg) =>
     {
-        cfg.ReceiveEndpoint(Environment.GetEnvironmentVariable("queue"), e =>
+        cfg.ReceiveEndpoint(builder.Configuration["queue"], e =>
         {
             e.ConfigureConsumer<WishlistGetterConsumer>(context);
         });

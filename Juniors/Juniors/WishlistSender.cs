@@ -3,18 +3,19 @@ using AllForTheHackathon.Domain;
 using Microsoft.Extensions.Options;
 using AllForTheHackathon.Infrastructure;
 using MassTransit;
+using Microsoft.AspNetCore.Hosting;
 
 namespace Juniors
 {
-    public class WishlistSender(IOptions<Settings> options, IRegistrar registrar, 
-        IWishlistsGenerator wishlistsGenerator, IPublishEndpoint _publishEndpoint)
+    public class WishlistSender(IOptions<Settings> options, IConfiguration configuration, IRegistrar registrar, 
+        IWishlistsGenerator wishlistsGenerator, IPublishEndpoint _publishEndpoint, ILogger<WishlistSender> logger)
     {
-        public async void SendWishlist()
+        public async void SendWishlist(int hackathonId)
         {
             Settings settings = options.Value;
-            var juniorName = Environment.GetEnvironmentVariable("name");
-            var juniorId = Environment.GetEnvironmentVariable("id");
-            Console.WriteLine(juniorName + " " + juniorId);
+            var juniorName = configuration["name"];
+            var juniorId = configuration["id"];
+            logger.LogInformation($"Hackathon {hackathonId} Junior {juniorName} {juniorId}");
             if (juniorId != null && juniorName != null)
             {
                 List<TeamLead> teamLeads = registrar.RegisterParticipants<TeamLead>(settings.FileWithTeamLeads);
@@ -25,7 +26,8 @@ namespace Juniors
                     Id = int.Parse(juniorId),
                     Name = juniorName,
                     Owner = "junior",
-                    Wishlist = teamLeadsWishlist[0].Employees
+                    HackathonId = hackathonId, 
+                    Wishlist = teamLeadsWishlist.First().Employees
                 });
             }
         }

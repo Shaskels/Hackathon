@@ -15,11 +15,6 @@ namespace HRManager
             _serviceProvider = serviceProvider;
         }
 
-        public void DeleteDatabase()
-        {
-            ApplicationContext _context = _serviceProvider.GetRequiredService<ApplicationContext>();
-            _context.Database.EnsureDeleted();
-        }
         public async void SaveJunior(Junior junior, Wishlist wishlist)
         {
             ApplicationContext _context = _serviceProvider.GetRequiredService<ApplicationContext>();
@@ -56,85 +51,82 @@ namespace HRManager
             await _context.SaveChangesAsync();
         }
 
-        public async Task<bool> CheckEmployeeCount()
+        public async Task<bool> CheckEmployeeCount(int hackathonId)
         {
             ApplicationContext _context = _serviceProvider.GetRequiredService<ApplicationContext>();
-            List<Junior> juniors = await _context.Juniors.ToListAsync();
-            List<TeamLead> teamLeads = await _context.TeamLeads.ToListAsync();
+            List<Junior> juniors = await _context.Juniors.Where(j => j.IdHackathon == hackathonId).ToListAsync();
+            List<TeamLead> teamLeads = await _context.TeamLeads.Where(t => t.IdHackathon == hackathonId).ToListAsync();
             if (juniors.Count() == _numberOfTeams && teamLeads.Count() == _numberOfTeams)
             {
-                Console.WriteLine("TRUE");
                 return true;
             }
             return false;
         }
 
-        public async Task<List<Junior>> GetJuniors()
+        public async Task<List<Junior>> GetJuniors(int hackathonId)
         {
             ApplicationContext _context = _serviceProvider.GetRequiredService<ApplicationContext>();
-            return await _context.Juniors.ToListAsync();
+            return await _context.Juniors.Where(j => j.IdHackathon == hackathonId).Include(j=>j.Wishlist).ToListAsync();
         }
 
-        public async Task<List<TeamLead>> GetTeamLeads()
+        public async Task<List<TeamLead>> GetTeamLeads(int hackathonId)
         {
             ApplicationContext _context = _serviceProvider.GetRequiredService<ApplicationContext>();
-            return await _context.TeamLeads.ToListAsync();
+            return await _context.TeamLeads.Where(t => t.IdHackathon == hackathonId).Include(t=>t.Wishlist).ToListAsync();
         }
 
-        public async Task<List<Wishlist>> GetJuniorsWishlists(List<Junior> oldJuniors, List<Junior> newJuniors)
+        public async Task<List<Wishlist>> GetJuniorsWishlists(List<Junior> juniors)
         {
             ApplicationContext _context = _serviceProvider.GetRequiredService<ApplicationContext>();
             List<Wishlist> juniorsWishlists = new List<Wishlist>();
-            List<Wishlist> wishlists = await _context.Wishlist.ToListAsync();
-            for (int i = 0; i < wishlists.Count; i++)
+            foreach (Junior junior in juniors)
             {
-                Junior? junior = oldJuniors.Find(s => s.Id == wishlists[i].EmployeeId);
-                if (junior != null)
+                if (junior.Wishlist != null)
                 {
+                    Wishlist wishlist = new Wishlist();
+                    wishlist.Id = junior.Wishlist.Id;
                     junior.Id = 0;
-                    newJuniors.Add(junior);
-                    List<EmployeeInWishlist> employeeInWishlists = await _context.EmployeesInWishlists.Where(p => p.WishlistId == wishlists[i].Id).ToListAsync();
+                    junior.Wishlist = null;
+                    List<EmployeeInWishlist> employeeInWishlists = await _context.EmployeesInWishlists.Where(p => p.WishlistId == wishlist.Id).Include(p=>p.Employee).ToListAsync();
                     foreach (var employeeIn in employeeInWishlists) {
-                        Employee? employee = _context.Employees.FirstOrDefault(p => p.Id == employeeIn.EmployeeId);
-                        Console.WriteLine(employee);
+                        Employee? employee = employeeIn.Employee;
                         if (employee != null)
                         {
                             employee.Id = 0;
-                            wishlists[i].EmployeeId = 0;
-                            wishlists[i].Employees.Add(employee);
+                            wishlist.EmployeeId = 0;
+                            wishlist.Employees.Add(employee);
                         }
                     }
-                    juniorsWishlists.Add(wishlists[i]);
+                    juniorsWishlists.Add(wishlist);
                 }
             }
             return juniorsWishlists;
         }
 
-        public async Task<List<Wishlist>> GetTeamLeadsWishlists(List<TeamLead> oldTeamLeads, List<TeamLead> newTeamLeads)
+        public async Task<List<Wishlist>> GetTeamLeadsWishlists(List<TeamLead> teamLeads)
         {
             ApplicationContext _context = _serviceProvider.GetRequiredService<ApplicationContext>();
             List<Wishlist> teamLeadsWishlists = new List<Wishlist>();
-            List<Wishlist> wishlists = await _context.Wishlist.ToListAsync();
-            for (int i = 0; i < wishlists.Count; i++)
+            foreach (TeamLead teamLead in teamLeads)
             {
-                TeamLead? lead = oldTeamLeads.Find(s => s.Id == wishlists[i].EmployeeId);
-                if (lead != null)
+                if (teamLead.Wishlist != null)
                 {
-                    lead.Id = 0;
-                    newTeamLeads.Add(lead);
-                    List<EmployeeInWishlist> employeeInWishlists = await _context.EmployeesInWishlists.Where(p => p.WishlistId == wishlists[i].Id).ToListAsync();
+                    Wishlist wishlist = new Wishlist();
+                    wishlist.Id = teamLead.Wishlist.Id;
+                    teamLead.Id = 0;
+                    teamLead.Wishlist = null;
+                    List<EmployeeInWishlist> employeeInWishlists = await _context.EmployeesInWishlists.Where(p => p.WishlistId == wishlist.Id).Include(p=>p.Employee).ToListAsync();
                     foreach (var employeeIn in employeeInWishlists)
                     {
-                        Employee? employee = _context.Employees.FirstOrDefault(p => p.Id == employeeIn.EmployeeId);
-                        Console.WriteLine(employee);
+                        Employee? employee = employeeIn.Employee;
                         if (employee != null)
                         {
                             employee.Id = 0;
-                            wishlists[i].EmployeeId = 0;
-                            wishlists[i].Employees.Add(employee);
+                            wishlist.EmployeeId = 0;
+                            wishlist.Employees.Add(employee);
                         }
                     }
-                    teamLeadsWishlists.Add(wishlists[i]);
+                    teamLeadsWishlists.Add(wishlist);
                 }
             }
             return teamLeadsWishlists;

@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\TeamLead\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B14ACBC6-0199-4672-B51D-0A28057BF175}|TeamLead\\TeamLeads.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\teamlead\\teamlead\\hackathonstartedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B14ACBC6-0199-4672-B51D-0A28057BF175}|TeamLead\\TeamLeads.csproj|solutionrelative:teamlead\\hackathonstartedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B14ACBC6-0199-4672-B51D-0A28057BF175}|TeamLead\\TeamLeads.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\teamlead\\teamlead\\wishlistsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B14ACBC6-0199-4672-B51D-0A28057BF175}|TeamLead\\TeamLeads.csproj|solutionrelative:teamlead\\wishlistsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B14ACBC6-0199-4672-B51D-0A28057BF175}|TeamLead\\TeamLeads.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\teamlead\\teamlead\\teamleads.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B14ACBC6-0199-4672-B51D-0A28057BF175}|TeamLead\\TeamLeads.csproj|solutionrelative:teamlead\\teamleads.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{B14ACBC6-0199-4672-B51D-0A28057BF175}|TeamLead\\TeamLeads.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\teamlead\\teamlead\\hackathonstartedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14ACBC6-0199-4672-B51D-0A28057BF175}|TeamLead\\TeamLeads.csproj|solutionrelative:teamlead\\hackathonstartedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B14ACBC6-0199-4672-B51D-0A28057BF175}|TeamLead\\TeamLeads.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\teamlead\\teamlead\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B14ACBC6-0199-4672-B51D-0A28057BF175}|TeamLead\\TeamLeads.csproj|solutionrelative:teamlead\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14ACBC6-0199-4672-B51D-0A28057BF175}|TeamLead\\TeamLeads.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\teamlead\\teamlead\\teamleads.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B14ACBC6-0199-4672-B51D-0A28057BF175}|TeamLead\\TeamLeads.csproj|solutionrelative:teamlead\\teamleads.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B14ACBC6-0199-4672-B51D-0A28057BF175}|TeamLead\\TeamLeads.csproj|d:\\study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0441#\\teamlead\\teamlead\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,26 +54,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "WishlistSender.cs",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\TeamLead\\TeamLead\\WishlistSender.cs",
               "RelativeDocumentMoniker": "TeamLead\\WishlistSender.cs",
               "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\TeamLead\\TeamLead\\WishlistSender.cs",
               "RelativeToolTip": "TeamLead\\WishlistSender.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T12:52:45.774Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "HackathonStartedConsumer.cs",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\TeamLead\\TeamLead\\HackathonStartedConsumer.cs",
               "RelativeDocumentMoniker": "TeamLead\\HackathonStartedConsumer.cs",
               "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\TeamLead\\TeamLead\\HackathonStartedConsumer.cs",
               "RelativeToolTip": "TeamLead\\HackathonStartedConsumer.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T12:50:34.257Z",
               "EditorCaption": ""
@@ -88,18 +88,17 @@
               "RelativeToolTip": "TeamLead\\config.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-17T10:05:54.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T10:05:54.9Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\TeamLead\\TeamLead\\Program.cs",
               "RelativeDocumentMoniker": "TeamLead\\Program.cs",
               "ToolTip": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\TeamLead\\TeamLead\\Program.cs",
               "RelativeToolTip": "TeamLead\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T09:22:37.631Z",
               "EditorCaption": ""
@@ -118,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TeamLeads.csproj",
               "DocumentMoniker": "D:\\Study\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0421#\\TeamLead\\TeamLead\\TeamLeads.csproj",
               "RelativeDocumentMoniker": "TeamLead\\TeamLeads.csproj",
@@ -126,8 +125,7 @@
               "RelativeToolTip": "TeamLead\\TeamLeads.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-16T09:22:44.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T09:22:44.061Z"
             },
             {
               "$type": "Document",

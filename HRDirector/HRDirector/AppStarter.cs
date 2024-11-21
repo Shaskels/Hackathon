@@ -3,7 +3,7 @@ using MassTransit;
 
 namespace HRDirector
 {
-    public class AppStarter(IPublishEndpoint _publishEndpoint, HackathonData hackathonData) : IHostedService
+    public class AppStarter(IPublishEndpoint _publishEndpoint, ILogger<AppStarter> logger) : IHostedService
     {
         private bool _running = true;
         public Task StartAsync(CancellationToken cancellationToken)
@@ -14,24 +14,12 @@ namespace HRDirector
 
         public async void RunAsync()
         {
-            int i = 0;
-            while (i < 10)
-            {
-                if (hackathonData.saved)
+            for(int i = 0; i < 10; i++) {
+                await _publishEndpoint.Publish<Hackathon>(new Hackathon
                 {
-                    hackathonData.teams.Clear();
-                    hackathonData.juniors.Clear();
-                    hackathonData.teamLeads.Clear();
-                    hackathonData.teamLeadsWishlists.Clear();
-                    hackathonData.juniorsWishlists.Clear();
-                    hackathonData.harmonicMean = 0;
-                    hackathonData.saved = false;
-                    await _publishEndpoint.Publish<Hackathon>(new Hackathon
-                    {
-                        Id = i
-                    });
-                    i++;
-                }
+                    Id = i
+                });
+                logger.LogInformation($"Hackathon {i} started");
                 await Task.Delay(1000);
             }
         }

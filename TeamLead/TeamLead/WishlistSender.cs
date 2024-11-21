@@ -6,15 +6,15 @@ using Microsoft.Extensions.Options;
 
 namespace TeamLeads
 {
-    public class WishlistSender(IOptions<Settings> options, IRegistrar registrar,
-        IWishlistsGenerator wishlistsGenerator, IPublishEndpoint _publishEndpoint)
+    public class WishlistSender(IOptions<Settings> options, IConfiguration configuration, IRegistrar registrar,
+        IWishlistsGenerator wishlistsGenerator, IPublishEndpoint _publishEndpoint, ILogger<WishlistSender> logger)
     {
-        public async void SendWishlist()
+        public async void SendWishlist(int hackathonId)
         {
             Settings settings = options.Value;
-            var teamLeadName = Environment.GetEnvironmentVariable("name");
-            var teamLeadId = Environment.GetEnvironmentVariable("id");
-            Console.WriteLine(teamLeadName + " " + teamLeadId);
+            var teamLeadName = configuration["name"];
+            var teamLeadId = configuration["id"];
+            logger.LogInformation($"Hackathon {hackathonId} TeamLead{teamLeadName} {teamLeadId}");
             if (teamLeadId != null && teamLeadName != null)
             {
                 List<TeamLead> teamLeads = registrar.RegisterParticipants<TeamLead>(settings.FileWithTeamLeads);
@@ -25,7 +25,8 @@ namespace TeamLeads
                     Id = int.Parse(teamLeadId),
                     Name = teamLeadName,
                     Owner = "teamLead",
-                    Wishlist = teamLeadsWishlist[0].Employees
+                    HackathonId = hackathonId,
+                    Wishlist = teamLeadsWishlist.First().Employees
                 });
             }
         }

@@ -1,6 +1,6 @@
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Data Source=hackathonapp.db"
+    "DefaultConnection": "Host=postgres_director;Port=5432;Database=db_final;Username=user;Password=pgpwd4habr"
   },
   "Settings": {
     "NumberOfTeams": "5"

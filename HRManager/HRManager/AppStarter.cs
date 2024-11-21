@@ -2,12 +2,13 @@
 using AllForTheHackathon.Domain;
 using AllForTheHackathon.Domain.Employees;
 using AllForTheHackathon.Domain.Strategies;
+using Microsoft.Extensions.Options;
 
 
 namespace HRManager
 {
     public class AppStarter(DBOperators operators, ToHRDirectorDataSender dataSender,
-        ITeamBuildingStrategy strategy) : IHostedService
+        ITeamBuildingStrategy strategy, IOptions<Settings> options, ILogger<AppStarter> logger) : IHostedService
     {
         private bool _running = true;
         public Task StartAsync(CancellationToken cancellationToken)
@@ -18,20 +19,24 @@ namespace HRManager
 
         public async void RunAsync()
         {
+            Settings settings = options.Value;
+            List<int> sandedHackathons = new List<int>();
             while (_running)
             {
-                await Task.Delay(5000);
-                if (await operators.CheckEmployeeCount())
+                await Task.Delay(1000);
+                for (var i = 0; i < settings.NumberOfHackathons; i++)
                 {
-                    List<Junior> oldJuniors = await operators.GetJuniors();
-                    List<TeamLead> oldTeamLeads = await operators.GetTeamLeads();
-                    List<Junior> newJuniors = new List<Junior>();
-                    List<TeamLead> newTeamLeads = new List<TeamLead>();
-                    List<Wishlist> juniorsWishlists = await operators.GetJuniorsWishlists(oldJuniors, newJuniors);
-                    List<Wishlist> teamLeadsWishlists = await operators.GetTeamLeadsWishlists(oldTeamLeads, newTeamLeads);
-                    List<Team> teams = strategy.BuildTeams(newJuniors, newTeamLeads, juniorsWishlists, teamLeadsWishlists);
-                    dataSender.sendData(newJuniors, newTeamLeads, teams);
-                    operators.DeleteDatabase();
+                    if (!sandedHackathons.Contains(i) && await operators.CheckEmployeeCount(i))
+                    {
+                        List<Junior> juniors = await operators.GetJuniors(i);
+                        List<TeamLead> teamLeads = await operators.GetTeamLeads(i);
+                        List<Wishlist> juniorsWishlists = await operators.GetJuniorsWishlists(juniors);
+                        List<Wishlist> teamLeadsWishlists = await operators.GetTeamLeadsWishlists(teamLeads);
+                        List<Team> teams = strategy.BuildTeams(juniors, teamLeads, juniorsWishlists, teamLeadsWishlists);
+                        dataSender.SendData(juniors, teamLeads, teams, i);
+                        sandedHackathons.Add(i);
+                        logger.LogInformation($"Teams Builded Hackathon {i}");
+                    }
                 }
             }
         }

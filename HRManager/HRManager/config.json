@@ -1,6 +1,7 @@
 {
   "Settings": {
-    "NumberOfTeams": "5"
+    "NumberOfTeams": "5",
+    "NumberOfHackathons": "10"
   },
   "ConnectionStrings": {
     "DefaultConnection": "Host=postgres;Port=5432;Database=db;Username=user;Password=pgpwd4habr"

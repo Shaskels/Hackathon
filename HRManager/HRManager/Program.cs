@@ -9,6 +9,7 @@ using MassTransit;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddJsonFile("config.json");
+builder.Configuration.AddEnvironmentVariables();
 builder.Services.AddHostedService<HRManager.AppStarter>();
 builder.Services.Configure<Settings>(builder.Configuration.GetSection("Settings"));
 builder.Services.AddRefitClient<ISenderApi>(new RefitSettings
@@ -28,7 +29,7 @@ builder.Services.AddMassTransit(x =>
     x.AddConsumer<WishlistGetterConsumer>();
     x.UsingRabbitMq((context, cfg) =>
     {
-        cfg.ReceiveEndpoint(Environment.GetEnvironmentVariable("queue"), e =>
+        cfg.ReceiveEndpoint(builder.Configuration["queue"], e =>
         {
             e.ConfigureConsumer<WishlistGetterConsumer>(context);
         });

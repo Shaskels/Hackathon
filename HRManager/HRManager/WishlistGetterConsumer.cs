@@ -18,15 +18,15 @@ namespace HRManager
             {
                 if (wishlist.Owner == "junior" && wishlist.Wishlist != null)
                 {
-                    var junior = new Junior(wishlist.Id, wishlist.Name);
+                    var junior = new Junior(wishlist.Id, wishlist.Name, wishlist.HackathonId);
                     var list = new Wishlist(wishlist.Wishlist);
                     list.Employee = junior;
-                    _dbOperators.SaveJunior((Junior)junior, list);
+                    _dbOperators.SaveJunior(junior, list);
                 } else if (wishlist.Owner == "teamLead" && wishlist.Wishlist != null) {
-                    var teamLead = new TeamLead(wishlist.Id, wishlist.Name);
+                    var teamLead = new TeamLead(wishlist.Id, wishlist.Name, wishlist.HackathonId);
                     var list = new Wishlist(wishlist.Wishlist);
                     list.Employee = teamLead;
-                    _dbOperators.SaveTeamLead((TeamLead)teamLead, list);
+                    _dbOperators.SaveTeamLead(teamLead, list);
                 }
             }
         }

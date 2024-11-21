@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Storage;
 
 namespace HRManager
 {
-    public class ToHRDirectorDataSender(ISenderApi api)
+    public class ToHRDirectorDataSender(ISenderApi api, ILogger<ToHRDirectorDataSender> logger)
     {
-        public async void sendData(List<Junior> juniors, List<TeamLead> teamLeads, List<Team> teams)
+        public async void SendData(List<Junior> juniors, List<TeamLead> teamLeads, List<Team> teams, int hackathonId)
         {
-            DataTransferObject dataTransferObject = new DataTransferObject(juniors, teamLeads, teams);
+            DataTransferObject dataTransferObject = new DataTransferObject(juniors, teamLeads, teams, hackathonId);
             bool sended = false;
             while (sended == false)
             {
@@ -17,12 +17,11 @@ namespace HRManager
                 {
                     using var response = await api.CreatePostAsync(dataTransferObject);
                     sended = true;
-                    Console.WriteLine(response.StatusCode);
-
+                    logger.LogInformation(response.StatusCode.ToString());
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"{ex.Message}");
+                    logger.LogError(ex.Message.ToString());
                     await Task.Delay(1000);
                 }
             }

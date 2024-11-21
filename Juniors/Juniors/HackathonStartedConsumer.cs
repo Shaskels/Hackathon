@@ -15,7 +15,7 @@ namespace Juniors
             Hackathon hackathon = context.Message;
             if (hackathon != null)
             {
-                _wishlistSender.SendWishlist();
+                _wishlistSender.SendWishlist(hackathon.Id);
             }
         }
     }
